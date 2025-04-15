@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: pixelplates-backend
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python server.py"
+    envVars:
+      - key: DB_HOST
+        fromDatabase:
+          name: pixelplates-db
+          property: host
+      - key: DB_NAME
+        fromDatabase:
+          name: pixelplates-db
+          property: database
+      - key: DB_USER
+        fromDatabase:
+          name: pixelplates-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: pixelplates-db
+          property: password
