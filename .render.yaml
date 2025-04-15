@@ -21,9 +21,9 @@ services:
         fromDatabase:
           name: pixelplates-db
           property: password
-      - key: TWILIO_SID
-        value: AC6a566adda0fba8004ba72271976f61a6
-      - key: TWILIO_AUTH_TOKEN
-        value: 480e563b20ae39c7b431737315914a94
-      - key: TWILIO_NUMBER
-        value: +19714022819
+      # - key: TWILIO_SID
+      #   value: AC6a566adda0fba8004ba72271976f61a6
+      # - key: TWILIO_AUTH_TOKEN
+      #   value: 480e563b20ae39c7b431737315914a94
+      # - key: TWILIO_NUMBER
+      #   value: +19714022819
